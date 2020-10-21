@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+       function Task4() {
+    let getInput = prompt("Enter the Number to Generate Odd/Even Sequence");
+    if (getInput % 2 == 0 && getInput != "" && getInput != null) {
+        var conf = confirm("Are you Sure! You want to Proceed with Even " + getInput + " !!");
+        if (conf == true) {
+            var result = "";
+            var div = document.getElementById("even-task4");
+            div.insertAdjacentHTML('beforeBegin', '<h3 style="margin-right:10px;">Even numbers are: </h3>');
+            for (var i = 0; i < getInput; i = i + 2) {
+                result += i + " , ";
+            }
+            document.getElementById("even-task4").textContent = result;
+        } else {
+            location.reload();
+        }
+
+    } else {
+        if (getInput != "" && getInput != null) {
+            var conf = confirm("Are you Sure! You want to Proceed with Odd " + getInput + " !!");
+        }
+        if (conf == true) {
+            var result = "";
+            var text = document.createTextNode("Odd Elements are: ");
+            var x = document.getElementById("even-task4");
+            var h3 = document.createElement("h3");
+            h3.style.marginRight = "10px";
+            h3.setAttribute("id", "heading");
+            h3.append(text);
+            x.parentNode.insertBefore(h3, x);
+            for (var i = 1; i < getInput; i = i + 2) {
+                result += i + " , ";
+            }
+            document.getElementById("even-task4").innerHTML = result;
+        } else {
+            location.reload();
+        }
+    }
+} 
+    </script>
+    <style type="text/css">
+        .flex {
+    display: flex;
+    align-items: center;
+}
+    </style>
+</head>
+<body>
+    <h2>Task 4</h2>
+    <button type="button" onclick="Task4()">Click Me</button>
+    <div class="flex">
+        <p id="odd-task4"></p>
+        <p id="even-task4"></p>
+    
+
+    <p style="position: absolute; right: 0; bottom: 0; margin-right: 10px;">Go To: <a href="./task2.html" target="_blank">Task2</a></p>
+    
+</div>
+</body>
+</html>

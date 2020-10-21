@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function Farenhite(){
+			var far = prompt("Enter a Temperature");
+			if (far != null && far != "") {
+			var cToFahr = far * 5 / 9 + 32;
+        alert(`${far}\xB0C is ${cToFahr} \xB0F.`)	
+			} 
+		}
+		function Celcius() {
+    var cel = prompt("Enter a Temperature");
+    if (cel != null && cel != "") {
+        var fToCel = (cel - 32) * 5 / 9;
+        alert(`${cel}\xB0F is ${fToCel}\xB0C.`)
+    }
+}
+
+	</script>
+	<style type="text/css">
+		.btn {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.btn:hover {opacity: 1}
+	</style>
+</head>
+<body>
+	<h3>EXERCISE NO: 2</h3>
+	<p><strong><mark>PROGRAM TO CONVERT TEMPERATURES</mark></strong></p>
+	<button class="btn" type="button" onclick="Farenhite()">Celcius To Farenhite</button>
+    <button class="btn" type="button" onclick="Celcius()">Farenhite To Celcius</button>
+
+</body>
+</html>

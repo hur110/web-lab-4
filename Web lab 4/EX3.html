@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EXERCISE 3</title>
+	<script type="text/javascript">
+		function BMICAL(){
+			var weight = prompt("ENTER YOUR WEIGHT IN (lbs)!");
+			var height = prompt("ENTER YOUR HEIGHT IN (in)!");
+			if (weight != null && height != null) {
+				var bmi = (weight * 702) / (height ** 2);
+				if (bmi < 18.5) {
+            alert("You are UnderWeight!!<br>");
+        } else if (bmi >= 18.5 && bmi <= 24.9) {
+            alert("You are Normal");
+        } else if (bmi >= 25.0 && bmi <= 29.9) {
+            alert("You are OverWeight");
+        } else {
+            alert("You are Obese");
+        }
+			}
+		}
+	</script>
+	<style type="text/css">
+		.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+		.btn {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.btn:hover {opacity: 1}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="center">
+	<h1>EXERCISE 3</h1>
+	<h2>BMI CALCULATOR</h2>
+	<p>Write a script that calculates the user’s body mass index (BMI) and categorizes it as underweight, normal,
+overweight, or obese, based on the table from the United States Centers for Disease Control:
+</p>
+<table>
+	<thead>
+		<tr style="background: rgb(208, 215, 216, 1); font-weight: bold;">
+			<td>BMI</td>
+			<td>Weight Status</td>
+		</tr>
+	</thead>
+	<tbody>
+ <tr>
+        <td>Below 18.5</td>
+        <td>UnderWeight</td>
+ </tr>
+    <tr>
+         <td>18.5 - 24.9</td>
+         <td>Normal</td>
+                    </tr>
+                    <tr>
+         <td>25.0 - 29.9</td>
+         <td>OverWeight</td>
+                    </tr>
+                    <tr>
+         <td>30.0 and Above </td>
+         <td>Obese</td>
+                    </tr>		
+	</tbody>
+</table>
+<button class="btn" onclick="BMICAL()">Click Here To Calculate Your BMI</button>
+
+</div>
+</div>
+</body>
+</html>

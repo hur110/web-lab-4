@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q1 PART(ii)</title>
+	<script type="text/javascript">
+		function check(){
+			var value = document.getElementById("data").value;
+			for(var i=1; i<=value; i++) {
+				if (i%2 !== 0)
+					document.write(i+ "<br>");
+			}
+			if (value<0){
+				alert("ERROR! This is a Negative Number");
+			}
+		}
+	</script>
+	<style type="text/css">
+		.check {background-color: #2196F3;} /* Blue */
+        .check:hover {background: #0b7dda;}
+	</style>
+</head>
+<body>
+	<input type="number" name="" id="data" placeholder="Enter a Number">
+	<br/><br/>
+	<button style="font-weight: bold;" class="check" onclick="check()">Click</button>
+</body>
+</html>
