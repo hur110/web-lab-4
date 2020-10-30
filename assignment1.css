@@ -1,0 +1,35 @@
+ul li::before {
+  content: "\2022";
+  color: #FFC300;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+	div{
+		margin: 50px 50px 50px 550px;
+
+	}
+	body{
+		line-height: 10px;
+	}
+	
+	#heading{
+		text-align: center;
+		font-weight: bold;
+		font-size: 50px;
+		color: rgb(51,127,255);
+	}
+	.back-img{
+		height: 150px;
+		width: 20%;
+		background-size: auto;
+		border: outset;
+		border-width: 10px;
+		border-color: rgb(9,161,114);
+	}
+	.back-circle{
+		border-radius: 50%;
+		width: 150px;
+		height: 100px;
+	}
